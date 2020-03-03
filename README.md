@@ -8,4 +8,4 @@
 ```make run```
 
 
-[link to your spark notebook enjoy!](localhost:8888)
+[link to your spark notebook enjoy!](http://localhost:8888)
