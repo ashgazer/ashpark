@@ -20,4 +20,7 @@ EXPOSE 8888
 
 # VOLUME  "/data" 
 
+RUN mkdir /root/.jupyter
+COPY jupyter_notebook_config.py /root/.jupyter/
+
 CMD /app/start_app.sh

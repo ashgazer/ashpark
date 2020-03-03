@@ -10,4 +10,4 @@ export PYSPARK_DRIVER_PYTHON_OPTS='notebook --ip="0.0.0.0" --allow-root'
 # jupyter notebook --ip="0.0.0.0" --allow-root &
 
 cd /app
-pyspark
+pyspark 
