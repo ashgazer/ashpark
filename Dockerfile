@@ -8,9 +8,9 @@ RUN apt-get -y  install openjdk-8-jre python ipython python-pip wget
 
 RUN pip install jupyter
 
-WORKDIR /app
-
 RUN wget http://apache.mirror.anlx.net/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz && tar zxvf spark-2.4.5-bin-hadoop2.7.tgz && rm spark-2.4.5-bin-hadoop2.7.tgz
+
+WORKDIR /app
 
 COPY src/ /app/ 
 
