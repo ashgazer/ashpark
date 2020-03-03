@@ -14,13 +14,16 @@ RUN wget http://apache.mirror.anlx.net/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2
 
 COPY src/ /app/ 
 
-RUN chmod +x /app/start_app.sh
-
 EXPOSE 8888
 
-# VOLUME  "/data" 
+EXPOSE 4040
 
 RUN mkdir /root/.jupyter
-COPY jupyter_notebook_config.py /root/.jupyter/
 
-CMD /app/start_app.sh
+COPY /config/jupyter_notebook_config.py /root/.jupyter/
+
+COPY start_app.sh /start_app.sh
+
+RUN chmod +x /start_app.sh
+
+CMD /start_app.sh

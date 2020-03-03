@@ -9,5 +9,7 @@
 
 
 [link to your spark notebook enjoy!](http://localhost:8888)
+[Spark UI](http://localhost:4040)
+
 
 ### save your work in the spark_vol folder. OTHERWISE YOU WILL LOSE IT!!!!
