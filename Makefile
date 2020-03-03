@@ -5,5 +5,5 @@ run:
 build:
 	docker build --rm -f "Dockerfile" -t ashikspark:latest "." 
 
-create:
-	docker create volume spark_vol
+create: build
+	docker volume create spark_vol
